@@ -2,6 +2,12 @@
 -- 2️⃣ INSERIR DADOS
 -- ========================================
 -- Clientes
+
+DELETE FROM Item_Pedido;
+DELETE FROM Pedido;
+DELETE FROM Produto;
+DELETE FROM Cliente;
+
 INSERT INTO Cliente (nome, email, telefone) VALUES
 ('Lívia Santos', 'livia@email.com', '11999990001'),
 ('Beatriz Costa', 'beatriz@email.com', '11999990002'),
@@ -25,3 +31,4 @@ INSERT INTO Item_Pedido (id_pedido, id_produto, quantidade, preco_unitario) VALU
 (1, 3, 2, 150.00),
 (2, 2, 1, 180.00),
 (3, 3, 1, 150.00);
+
